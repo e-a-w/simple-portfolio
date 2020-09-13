@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Liz Watkins</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="divider gradient"></div>
+
+    <header>
+      <div id="header-title">Liz <br />Watkins.</div>
+      <div id="header-subtitle">// miami-based full stack web developer</div>
+      <a href="#contact" id="header-btn">Contact</a>
+    </header>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+      <div class="title">{ Projects }</div>
+      <div class="project-info">
+        Like what you see? Check out
+        <a href="https://github.com/e-a-w">my GitHub</a> for more of my work!
+      </div>
+      <div class="project-container">
+        <div class="project-image">
+          <img class="petsite" src="petsite.png" alt="pet site project" />
+        </div>
+        <div class="project-desc">
+          <h2>Petster Exotic</h2>
+          <p>
+            Full stack MERN app for those who own exotic pets and are looking
+            for a pet sitter, or those looking to find exotic pet-sitting
+            opportunities.
+          </p>
+          <p>
+            Users can register an account by role, update account information,
+            save favorite profiles, search by location or description, contact
+            other users by email or video call, edit a calendar and use Paypal
+            to tip pet sitters.
+          </p>
+          <p>
+            Uses the Material-UI and Fullcalendar.io frameworks, integrates the
+            Mapbox, Sendgrid, Jitsi and Cloudinary APIs. On the back end, uses
+            JWT and Passport for authentication and authorization, and bcrypt
+            for password hashing. Includes a number of npm packages including
+            Faker, sweetalert, moment and more!
+          </p>
+          <p>Wyncode final project; winner of the Pitch Day contest.</p>
+          <button class="project-btn">GitHub Link</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-image">
+          <img src="memepark.png" alt="meme site project" />
+        </div>
+        <div class="project-desc">
+          <h2>Meme Park</h2>
+          <p>
+            Web app deployed to Heroku and created with React, React Bootstrap
+            and the Express framework for Node.js.
+          </p>
+          <p>
+            Integrates the giphy API to allow a user to search, browse and share
+            memes on social media.
+          </p>
+          <p>
+            Visit the deployed site
+            <a href="https://murmuring-ravine-09544.herokuapp.com/">here</a>!
+            Written for the Wyncode midterm project.
+          </p>
+          <button class="project-btn">GitHub Link</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-image">
+          <img src="cardgame.png" alt="card game project" />
+        </div>
+        <div class="project-desc">
+          <h2>REPL Card Game</h2>
+          <p>
+            A Javascript text-based card game built in Node.js to play on the
+            REPL site.
+          </p>
+          <p>
+            Created with the npm packages chalk, readline-sync and node-cards.
+          </p>
+          <p>
+            Play it
+            <a href="https://repl.it/@ewatkins/cardgame#index.js">here</a>!
+          </p>
+          <button class="project-btn">GitHub Link</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-image">
+          <img src="mockup.png" alt="youtube mockup project" />
+        </div>
+        <div class="project-desc">
+          <h2>YouTube White Mockup</h2>
+          <p>A static mockup of a YouTube White page.</p>
+          <p>Uses only HTML and CSS to recreate a YouTube White page.</p>
+          <p>
+            View it live
+            <a href="https://repl.it/@ewatkins/youtube-mockup">here</a>!
+          </p>
+          <button class="project-btn">GitHub Link</button>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-image">
+          <img src="fansite.png" alt="fansite project" />
+        </div>
+        <div class="project-desc">
+          <h2>Star Wars Fansite</h2>
+          <p>A single-page fan site using HTML and CSS</p>
+          <p>
+            View it live
+            <a href="https://repl.it/@ewatkins/star-wars-fansite">here</a>!
+          </p>
+          <button class="project-btn">GitHub Link</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="about">
+      <div class="title">{ About }</div>
+      <div id="about-desc">
+        <p>
+          Hi! I'm Liz - a full stack web developer based in Miami, FL who
+          recently graduated from Wyncode Academy.
+        </p>
+        <p>
+          I've used the MongoDB, Express, React & Node.js (MERN) stack as well
+          as HTML, CSS, JS to create web apps and work with APIs. I'm always
+          coding and working on something new, so come take a look at my GitHub
+          to see what's up next!
+        </p>
+        <p>
+          You can find me
+          <a href="https://github.com/e-a-w">here on GitHub</a> and connect with
+          me on <a href="https://www.linkedin.com/in/eawatkins/">LinkedIn</a>!
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact">
+      <div class="title">{ Contact Me }</div>
+      <form action="https://formspree.io/mqkgzelb" method="POST">
+        <label>Name:</label>
+        <input type="text" placeholder="name" name="name" />
+        <label>Email:</label>
+        <input type="email" placeholder="email" name="email" />
+        <label>Message:</label>
+        <textarea rows="5" placeholder="message..." name="message"></textarea>
+        <button type="submit">Send!</button>
+      </form>
+    </section>
+
+    <footer>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/e-a-w">GitHub</a>
+      <a href="https://www.linkedin.com/in/eawatkins/">LinkedIn</a>
+    </footer>
+  </body>
+</html>

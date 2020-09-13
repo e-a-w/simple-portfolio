@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+@keyframes gradient {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+:root {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  --green: rgb(48, 197, 86);
+}
+
+body {
+  background: black;
+}
+
+a,
+a:visited {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s;
+  border-top: 2px solid transparent;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: darkgreen;
+  border-top: 2px solid darkgreen;
+}
+
+.divider {
+  margin-bottom: 30px;
+  height: 5px;
+  width: 100vw;
+  background: green;
+  border-top: 3px solid darkgreen;
+}
+
+.divider.gradient {
+  height: 2vh;
+  background: linear-gradient(
+    45deg,
+    rgb(0, 0, 0),
+    darkgreen 50%,
+    var(--green) 100%
+  );
+  background-size: 300%;
+  animation: gradient 3s linear infinite alternate;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+@media only screen and (min-width: 700px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  height: 100vh;
+  width: 100vw;
+  color: var(--green);
+}
+
+#header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: -1px 0px 1px rgb(150, 255, 129);
+}
+
+#header-subtitle {
+  margin-top: 1rem;
+  padding: 2vmin;
+  font-size: 1.3rem;
+}
+
+#header-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--green);
+  border-top: 2px solid lightgreen;
+  border-left: 2px solid lightgreen;
+  background: transparent;
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.7s ease-in-out;
+}
+
+#header-btn:hover,
+#header-btn:focus {
+  background: var(--green);
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  #header-title {
+    margin-top: 10vh;
+    font-size: 5rem;
+    text-shadow: -2px -1px 1px rgb(150, 255, 129);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #header-title {
+    font-size: 7rem;
+  }
+  #header-subtitle {
+    font-size: 2.5rem;
+  }
+  #header-btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+#projects {
+  padding: 5vh 5vw;
+  min-height: 100vh;
+}
+
+#projects .title {
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  align-items: center;
+  width: 100%;
+}
+
+.project-info {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  color: white;
+  border: 1px solid var(--green);
+}
+
+.project-info a,
+a:visited {
+  color: var(--green);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid var(--green);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-image img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.petsite {
+  border-left: 2px solid #eee;
+}
+
+.project-desc {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  color: black;
+  border: 2px solid var(--green);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.project-desc p,
+.project-desc h2 {
+  padding: 0.5rem 1.5rem;
+}
+
+.project-btn {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  width: 200px;
+  color: lightgreen;
+  background: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-left: 0.7rem solid var(--green);
+  transition: all 0.5s;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+  width: 90%;
+}
+
+#about {
+  padding: 5vh 5vw;
+  min-height: 100vh;
+  color: var(--green);
+}
+
+#about-desc {
+  margin-top: 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  border: 1px solid var(--green);
+  font-size: 1.2rem;
+  color: white;
+}
+
+#about-desc p {
+  margin-bottom: 1rem;
+}
+
+#about-desc p:last-of-type {
+  margin-bottom: 0;
+}
+
+#contact {
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+form button {
+  margin-top: 1rem;
+  max-width: 175px;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: lightgreen;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: 2px solid var(--green);
+  border-top: 2px solid lightgreen;
+  border-left: 2px solid lightgreen;
+  background: transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background: var(--green);
+  color: black;
+  border: 2px solid black;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  background: black;
+}
+
+footer a,
+footer a:visited {
+  padding: 0.3rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  border-left: 2px solid transparent;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  color: var(--green);
+  border-left: 2px solid var(--green);
+}
+
+@media only screen and (min-width: 630px) {
+  footer a,
+  footer:visited,
+  footer a:hover,
+  footer a:active,
+  footer a:focus {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  footer a,
+  footer:visited,
+  footer a:hover,
+  footer a:active,
+  footer a:focus {
+    font-size: 2rem;
+  }
+}
