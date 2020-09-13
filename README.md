@@ -1,1 +1,3 @@
-# e-a-w.github.io
+# Portfolio
+
+Code for the portfolio site. Written with HTML & CSS.
