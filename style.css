@@ -284,6 +284,8 @@ a:visited {
   height: 100%;
   width: 70vw;
   align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 form {
