@@ -1,3 +1,5 @@
 # Portfolio
 
-Code for the portfolio site. Written with HTML & CSS.
+Code for a portfolio site, written with HTML & CSS.
+
+View it on [REPL](https://repl.it/@ewatkins/simple-portfolio)!
